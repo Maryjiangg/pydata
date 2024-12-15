@@ -1,0 +1,69 @@
+<html>
+<head>
+    <title>Titanic</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .men, .women, .children {
+            width: 100px;
+            height: 50px;
+            rx: 15;
+            ry: 15;
+            fill: deepskyblue;
+            transition: 2s;
+        }
+
+        .men:hover, .children:hover {
+            width: 840px;
+            height: 50px;
+            stroke: grey;
+            stroke-width: 2px;
+        }
+        .women:hover{
+            width:240;
+        }
+
+        .women, .children {
+            fill: hotpink;
+        }
+
+        svg {
+            border: 2px solid black;
+            margin-top: 20px;
+        }
+
+        img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Women and Children First?</h1>
+    <p>The Titanic sank without enough lifeboats. There is a belief that the captain said "women and children first". Was it true?</p>
+    <p>We created a Python program (using the following steps) to answer the question by determining the % of each group (men, women, children) who died in the tragedy. Here are the results of my DS project.</p>
+
+    <img src="titanic.png"  />
+
+    <svg width="850" height="200">
+        <rect class="men" x="2" y="10" />
+        <rect class="women" x="2" y="70" />
+        <rect class="children" x="2" y="130" />
+        <text x="10" y="40" fill="white">Men</text>
+        <text x="10" y="100" fill="white">Women</text>
+        <text x="10" y="160" fill="white">Children</text>
+        <text x="790" y="40" fill="white">84%</text>
+        <text x="790" y="100" fill="white">24%</text>
+        <text x="790" y="160" fill="white">42%</text>
+    </svg>
+
+    <p>There are some issues with the data (missing age data) and how much the price of tickets affected survival rates, but overall, we accepted our methods. Here are the results of my DS project.</p>
+</body>
+</html>
